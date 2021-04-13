@@ -1,4 +1,4 @@
-var input = prompt(`Ingrese item de busqueda`)
+var input = prompt(`Ingrese item de busqueda: virus, disco duro, monitor, problemas windows`)
         var button = document.getElementById('opener')
         var elemento;
         var counter = 0;
@@ -13,8 +13,10 @@ var input = prompt(`Ingrese item de busqueda`)
         }
         const virus = new item('virus', 'https://www.youtube.com/watch?v=FaeP6xoZOXc')
         const disco_duro = new item('disco duro', 'https://www.youtube.com/watch?v=fTRxLMJn_Jg')
+        const monitor = new item('monitor','https://www.youtube.com/watch?v=AhV09HD7Ee0')
+        const impresora = new item('problemas windows', 'https://www.youtube.com/watch?v=fTxbIn6hD3U')
 
-        var items = [virus, disco_duro]
+        var items = [virus, disco_duro, monitor, impresora]
         var writer = document.getElementById('writer')
         input  = String(input.toLowerCase())
         writer.innerHTML = input
