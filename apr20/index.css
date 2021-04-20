@@ -1,0 +1,7 @@
+form{
+    margin-left: 30%;
+}
+.carousel-item img{
+    object-fit: cover;
+    height: 400px;
+}
