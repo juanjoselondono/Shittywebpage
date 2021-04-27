@@ -5,3 +5,7 @@ form{
     object-fit: cover;
     height: 400px;
 }
+
+body{
+    background-color: rgb(245, 188, 197);
+}
