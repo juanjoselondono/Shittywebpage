@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var name = prompt('Escribe tu nombre', 'mauricio')
+    alert(`tu nombre es ${name}`)
+    var age = prompt('Escribe tu edad', '15')
+    alert(`Tu edad es ${age}`)
+    function confirmar (){
+        var data=  confirm('Usted tiene la edad mayor de 18 años')
+        console.log(data)
+        if(data){
+            abrir()
+            cerrar()
+        }
+    }
+    function abrir(){
+        setInterval(() => {
+            window.open('https://www.google.com/')
+            console.log('executed')
+        }, 1000)
+    }
+    function cerrar(){
+        setTimeout(5000, ()=>{
+            window.close()
+        })
+    }
+    confirmar()
+</script>
+</html>
