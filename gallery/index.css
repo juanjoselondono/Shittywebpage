@@ -1,0 +1,14 @@
+#carouselExampleIndicators{
+    height: 100vh;
+}
+#carousel-image{
+    height: 90vh;
+    object-fit: cover;
+}
+.carousel-text{
+    font-size: 3em;
+    font-weight: lighter;
+}
+body{
+    background-color: black;
+}
