@@ -1,0 +1,24 @@
+#carouselExampleIndicators{
+    height: 100vh;
+}
+#carousel-image{
+    height: 90vh;
+    object-fit: cover;
+}
+.carousel-text{
+    font-size: 3em;
+    font-weight: lighter;
+}
+.carousel-price{
+    font-size: 5em;
+    width: 90%;
+    height: auto;
+    background-color: aliceblue;
+    background-color: black;
+    border-radius: 25px;
+    border: solid white 2px;
+    color: white;
+}
+body{
+    background-color: black;
+}
