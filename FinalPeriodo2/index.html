@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen Final</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Examen Final Periodo 2</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class ="nav-link"aria-current="page" href="#">Juan José Londoño D 11C</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Menu
+                </a>
+                <ul class="dropdown-menu me-2" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">No disponible</a></li>
+                  <li><a class="dropdown-item" href="#">No disponible</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="https://images.pexels.com/photos/3735780/pexels-photo-3735780.jpeg?cs=srgb&dl=pexels-polina-tankilevitch-3735780.jpg&fm=jpg" alt="First slide">
+            <div id = "header_container" class="carousel-caption d-none d-md-block">
+                <h5 class = "header_item">Vacunación Covid19</h5>
+                <p class="header_caption">"La solución a la pandemia"</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100 h-10" src="https://images.pexels.com/photos/3735747/pexels-photo-3735747.jpeg?cs=srgb&dl=pexels-polina-tankilevitch-3735747.jpg&fm=jpg" alt="Second slide">
+            <div id = "header_container" class="carousel-caption d-none d-md-block">
+                <h5 class = "header_item">Vacunación Covid19</h5>
+                <p class="header_caption">"Juntos Podemos"</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="https://images.pexels.com/photos/3735770/pexels-photo-3735770.jpeg?cs=srgb&dl=pexels-polina-tankilevitch-3735770.jpg&fm=jpg" alt="Third slide">
+            <div id = "header_container" class="carousel-caption d-none d-md-block">
+                <h5 class = "header_item">Vacunación Covid19</h5>
+                <p class="header_caption">"La colaboración es la clave para salir de está cirsis"</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    <section class="buttons_container">
+        <button type="button" class="btn btn-primary" onclick="Alert()">Mostrar alerta</button>
+        <button type="button" class="btn btn-secondary" onClick="openRandomPage()">Abrir Página Al azar</button>
+        <button type="button" class="btn btn-success" onClick ="closeRandomPage()">Cerrar página Al azar</button>
+        <button type="button" class="btn btn-danger" onclick="runInterval()">Correr intervalo</button>
+    </section>
+    <section>
+        <div class="card" style="width: 80%; justify-self: center;margin: 8%;">
+            <iframe class="card-img-top" id="player" type="text/html" width="640" height="360"
+  src="https://www.youtube.com/embed/_MFglohsOQA?enablejsapi=1&origin"
+  frameborder="0"></iframe>
+            <div class="card-body">
+                <h5 class="card-title">Vacunación COVID19</h5>
+                <p class="card-text">Las vacunas para prevenir la enfermedad del coronavirus 2019 (COVID-19) tal vez representen la mejor esperanza para terminar con la pandemia. Pero mientras la Administración de Alimentos y Medicamentos de los Estados Unidos (FDA) continúa autorizando el uso de emergencia de las vacunas contra la COVID-19, probablemente tengas preguntas. Infórmate sobre los beneficios de las vacunas contra la COVID-19, cómo funcionan, sus posibles efectos secundarios, y la importancia de continuar tomando medidas de prevención contra la infección.</p>
+                <a href="https://www.dw.com/es/actualidad/s-30684" class="btn btn-primary">Fuente: DW</a>
+            </div>
+            </div>
+    </section>
+    <script src="./index.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
