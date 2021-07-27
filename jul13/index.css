@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(226, 226, 226);
+    background-size: cover;
+    background-position-y: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1.5fr; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.presentation{
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.presentation-title{
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+.carousel-item{
+    width: 50vh;
+    height: 50vh;
+}
+.item-container{
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr;
+}
+#carouselExampleIndicators{
+    margin-left: 5%;
+}
+#opener{
+    justify-self: center;
+    height: 5vh;
+}
